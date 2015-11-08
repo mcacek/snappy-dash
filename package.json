@@ -1,0 +1,46 @@
+{
+  "name": "snappy-dash",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mcacek/snappy-dash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mcacek/snappy-dash/issues"
+  },
+  "homepage": "https://github.com/mcacek/snappy-dash#readme",
+  "devDependencies": {
+    "angular": "^1.4.7",
+    "brfs": "^1.4.1",
+    "browser-sync": "^2.9.12",
+    "browserify": "^12.0.1",
+    "del": "^2.0.2",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-postcss": "^6.0.1",
+    "gulp-watch": "^4.3.5",
+    "lodash": "^3.10.1",
+    "merge-stream": "^1.0.0",
+    "postcss-reporter": "^1.3.0",
+    "purecss": "^0.6.0",
+    "require-dir": "^0.3.0",
+    "require-directory": "^2.1.1",
+    "stylelint": "^2.1.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.0"
+  },
+  "browserify": {
+    "transform": [
+      "brfs"
+    ]
+  }
+}

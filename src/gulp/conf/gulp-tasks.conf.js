@@ -1,0 +1,35 @@
+module.exports = function(common) {
+  return {
+    js: {
+      snappy: {
+        files: {
+          src: ['src/js/snappy-dash.js'],
+          destDir: common.buildDir + '/assets/js',
+          destFile: 'snappy-dash.js'
+        }
+      },
+      vendor: {
+        files: {
+          src: [
+            'node_modules/lodash/index.js',
+            'node_modules/angular/angular.js'
+          ],
+          destDir: common.buildDir + '/assets/js',
+          destFile: 'vendor.js'
+        }
+      }
+    },
+    css: {
+      files: {
+        src: ['src/css/*.css'],
+        destDir: common.buildDir + '/assets/css'
+      }
+    },
+    static: {
+      files: {
+        src: ['src/static/**/*'],
+        destDir: common.buildDir
+      }
+    }
+  };
+};
