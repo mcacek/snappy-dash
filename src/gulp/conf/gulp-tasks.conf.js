@@ -20,9 +20,20 @@ module.exports = function(common) {
       }
     },
     css: {
-      files: {
-        src: ['src/css/*.css'],
-        destDir: common.buildDir + '/assets/css'
+      snappy: {
+        files: {
+          src: ['src/css/*.css'],
+          destDir: common.buildDir + '/assets/css'
+        }
+      },
+      vendor: {
+        files: {
+          src: [
+            'node_modules/purecss/build'
+          ],
+          destDir: common.buildDir + '/assets/css',
+          destFile: 'vendor.css'
+        }
       }
     },
     static: {
