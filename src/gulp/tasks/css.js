@@ -10,18 +10,28 @@ var stylelint = require('stylelint');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
 var mergeStream = require('merge-stream');
+var _ = require('lodash');
 
 var cssConf = gulpConfig.tasks.css;
 
-gulp.task('build:css', buildCSS(false));
+gulp.task('build:css', buildCSS);
+gulp.task('watch:css', watchCSS);
 
-function buildCSS(withWatch) {
-  return function() {
-    return mergeStream(snappyCSS(withWatch), vendorCSS(withWatch));
-  };
+function buildCSS() {
+    return mergeStream(snappyCSS(), vendorCSS());
 }
 
-function snappyCSS(withWatch) {
+function watchCSS(done) {
+  var snappy = cssConf.snappy;
+  var vendor = cssConf.vendor;
+
+  watch(_.flatten([snappy.files.src, vendor.files.src]), function() {
+    mergeStream(snappyCSS(), vendorCSS())
+      .on('end', done);
+  });
+}
+
+function snappyCSS() {
   var snappy = cssConf.snappy;
   var processors = [
     atImport(),
@@ -32,31 +42,17 @@ function snappyCSS(withWatch) {
     reporter({ clearMessages: true })
   ];
 
-  var stream = gulp.src(snappy.files.src);
-
-  if (withWatch) {
-    stream.pipe(watch(snappy.files.src));
-  }
-
-  return stream
+  return gulp.src(snappy.files.src)
     .pipe(postcss(processors))
     .pipe(gulp.dest(snappy.files.destDir));
 }
 
-function vendorCSS(withWatch) {
+function vendorCSS() {
   var vendor = cssConf.vendor;
 
-  var stream = gulp.src(vendor.files.src);
-
-  if (withWatch) {
-    stream.pipe(watch(vendor.files.src));
-  }
-
-  return stream
+  return gulp.src(vendor.files.src)
     .pipe(concat(vendor.files.destFile))
     .pipe(gulp.dest(vendor.files.destDir));
 }
 
 exports.buildCSS = buildCSS;
-exports.snappyCSS = snappyCSS;
-exports.vendorCSS = vendorCSS;

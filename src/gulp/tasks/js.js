@@ -12,6 +12,8 @@ var pluginsConf = gulpConfig.plugins;
 var jsConf = gulpConfig.tasks.js;
 
 gulp.task('build:js', buildJS);
+// TODO: should watch vendor as well..
+gulp.task('watch:js', snappyJSWatch);
 
 function buildJS() {
   return mergeStream(snappyJS(), vendorJS());
