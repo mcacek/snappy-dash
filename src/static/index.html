@@ -6,11 +6,37 @@
     <link rel="stylesheet" href="assets/css/snappy-dash.css">
   </head>
   <body>
-    <div class="left-nav"></div>
+    <div class="left-nav">
+      <div class="user-nav">
+        <img src="user-nav__avatar" alt="User Avatar" />
+        <h2 class="user-nav__name">Charlie Kelly</h2>
+        <ul class="user-nav__controls">
+          <li class="user-nav__control-item"><a href="#">Profile</a></li>
+          <li class="user-nav__control-item">Logout</a></li>
+        </ul>
+      </div>
+      <ul class="left-nav-menu">
+        <li>Dashboard</li>
+        <li>Applications</li>
+        <li>Releases</li>
+        <li>Deployments</li>
+        <li>Questions?</li>
+      </ul>
 
-    <header>
-      <h1>Snappy Dash</h1>
+      <ul class="left-nav-submenu">
+        <li>Search:</li>
+        <li>Sort:</li>
+        <li>Filter:</li>
+      </ul>
+    </div>
+
+    <header class="main-header">
+      <h1 class="main-header__title">Snappy Dash</h1>
     </header>
+
+    <div class="main-content">
+      <p>Some content here..</p>
+    </div>
 
     <script src="assets/js/snappy-dash.js"></script>
   </body>
