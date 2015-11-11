@@ -1,5 +1,6 @@
 {
   "rules": {
-    "color-hex-case": [2, "lower"]
+    "color-hex-case": [2, "lower"],
+    "custom-property-no-outside-root": 2
   }
 }

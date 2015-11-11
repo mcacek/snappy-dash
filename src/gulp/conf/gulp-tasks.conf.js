@@ -22,7 +22,7 @@ module.exports = function(common) {
     css: {
       snappy: {
         files: {
-          src: ['src/css/*.css'],
+          src: ['src/css/snappy-dash.css'],
           destDir: common.buildDir + '/assets/css'
         }
       },
@@ -38,7 +38,7 @@ module.exports = function(common) {
     },
     static: {
       files: {
-        src: ['src/static/**/*'],
+        src: ['src/static/**/*.*'],
         destDir: common.buildDir
       }
     }

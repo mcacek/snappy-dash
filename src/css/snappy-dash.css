@@ -1,3 +1,2 @@
-body {
-  color: #cccccc;
-}
+@import 'base.css';
+@import 'layout.css';

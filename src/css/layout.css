@@ -1,0 +1,13 @@
+@import 'colors.css';
+
+#left-nav {
+  background-color: var(--color-green-1);
+
+  a {
+    color: #fff;
+  }
+}
+
+#main-header {
+
+}

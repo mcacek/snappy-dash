@@ -17,6 +17,7 @@ function buildJS() {
   return mergeStream(snappyJS(), vendorJS());
 }
 
+// TODO: Clean up all this crap...too many functions.
 function snappyJS() {
   var browserifyConfig = _.cloneDeep(pluginsConf.browserify.config);
 

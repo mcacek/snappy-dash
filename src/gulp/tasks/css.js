@@ -1,7 +1,11 @@
 var gulp = require('gulp');
 var gulpConfig = require('../conf/gulp.conf');
 var postcss = require('gulp-postcss');
+var atImport = require('postcss-import');
 var reporter = require('postcss-reporter');
+var customProperties = require('postcss-custom-properties');
+var postcssNested = require('postcss-nested');
+var autoprefixer = require('autoprefixer');
 var stylelint = require('stylelint');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
@@ -20,7 +24,11 @@ function buildCSS(withWatch) {
 function snappyCSS(withWatch) {
   var snappy = cssConf.snappy;
   var processors = [
+    atImport(),
+    postcssNested(),
+    customProperties(),
     stylelint(),
+    autoprefixer({ browsers: ['last 2 versions'] }),
     reporter({ clearMessages: true })
   ];
 
