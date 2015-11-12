@@ -30,7 +30,7 @@ module.exports = function(common) {
       vendor: {
         files: {
           src: [
-            'node_modules/purecss/build'
+            'node_modules/purecss/build/pure.css'
           ],
           destDir: common.buildDir + '/assets/css',
           destFile: 'vendor.css'
