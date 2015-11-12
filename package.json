@@ -52,5 +52,5 @@
   "browserify-shim": {
     "angular": "angular",
     "lodash": "_"
-  },
+  }
 }

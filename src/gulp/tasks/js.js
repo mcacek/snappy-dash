@@ -46,8 +46,7 @@ function snappyJSWatch(done) {
   bundler.on('end', done);
 
   function bundle() {
-    bundler.external(pluginsConf.browserify.external)
-      .bundle()
+    bundler.bundle()
       .pipe(source(snappy.files.destFile))
       .pipe(buffer())
       .pipe(gulp.dest(snappy.files.destDir));
