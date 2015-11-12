@@ -27,7 +27,6 @@ function snappyJS() {
   browserifyConfig.src = snappy.files.src;
 
   return browserify(browserifyConfig)
-    .external(pluginsConf.browserify.external)
     .bundle()
     .pipe(source(snappy.files.destFile))
     .pipe(buffer())

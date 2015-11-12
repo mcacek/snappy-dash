@@ -45,7 +45,12 @@
   },
   "browserify": {
     "transform": [
-      "brfs"
+      "brfs",
+      "browserify-shim"
     ]
-  }
+  },
+  "browserify-shim": {
+    "angular": "angular",
+    "lodash": "_"
+  },
 }

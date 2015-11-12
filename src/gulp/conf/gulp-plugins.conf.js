@@ -4,8 +4,7 @@ module.exports = {
       debug: true,
       cache: {},
       packageCache: {}
-    },
-    external: ['angular', 'lodash']
+    }
   },
   postcss: {
     processors: [
