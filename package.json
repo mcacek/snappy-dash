@@ -50,7 +50,7 @@
     ]
   },
   "browserify-shim": {
-    "angular": "angular",
-    "lodash": "_"
+    "angular": "global:angular",
+    "lodash": "global:_"
   }
 }

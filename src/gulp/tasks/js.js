@@ -24,7 +24,7 @@ function snappyJS() {
   var browserifyConfig = _.cloneDeep(pluginsConf.browserify.config);
 
   var snappy = jsConf.snappy;
-  browserifyConfig.src = snappy.files.src;
+  browserifyConfig.entries = snappy.files.src;
 
   return browserify(browserifyConfig)
     .bundle()
