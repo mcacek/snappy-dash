@@ -25,7 +25,7 @@ function watchCSS(done) {
   var snappy = cssConf.snappy;
   var vendor = cssConf.vendor;
 
-  watch(_.flatten([snappy.files.src, vendor.files.src]), function() {
+  watch(_.flatten([snappy.files.watch, vendor.files.src]), function() {
     mergeStream(snappyCSS(), vendorCSS())
       .on('end', done);
   });

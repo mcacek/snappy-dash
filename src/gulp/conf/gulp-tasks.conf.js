@@ -22,6 +22,7 @@ module.exports = function(common) {
     css: {
       snappy: {
         files: {
+          watch: ['src/css/**/*.css'],
           src: ['src/css/snappy-dash.css'],
           destDir: common.buildDir + '/assets/css'
         }
