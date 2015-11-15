@@ -5,6 +5,8 @@
   > a {
     display: block;
     height: 100px;
+    padding: .5em;
+    padding-right: 1em;
     border-left: 8px solid var(--color-green-1);
     text-decoration: none;
     color: inherit;
