@@ -1,16 +1,18 @@
 @import 'colors.css';
 
 #l-base {
-
+  display: flex;
+  position: absolute;
+  height: calc(100% - 71px);
+  width: 100%;
+  flex-grow: 1;
+  flex-direction: row;
 }
 
 /* Navigation */
 #l-left-nav {
   display: flex;
-  flex-direction:row;
-  position: fixed;
-  top: 0;
-  bottom: 0;
+  flex-direction: row;
 }
 
 #l-left-nav-primary {
@@ -26,10 +28,18 @@
 }
 
 #l-main {
+  height: calc(100% - 71px);
   flex-grow: 1;
-  padding-left: 1em;
+  margin-left: 1px;
 }
 
 #l-main-header {
+  margin-bottom: 1px;
+  padding: 1em;
+  background-color: var(--color-blue-4);
+  color: var(--color-blue-1);
 
+  > h1 {
+    margin: 0;
+  }
 }

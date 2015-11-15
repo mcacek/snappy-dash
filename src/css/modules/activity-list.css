@@ -1,0 +1,28 @@
+.activity-list {
+  width: 100%;
+}
+
+.activity-list-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: var(--color-blue-1);
+  margin-bottom: 1px;
+}
+
+.activity-list-item__icon {
+  height: 1em;
+  width: 1.1em;
+  margin: .5em;
+  padding: 5px;
+  padding-bottom: 7px;
+  font-size: 1.5em;
+  background-color: var(--color-blue-3);
+  color: #ffffff;
+  border-radius: 1.75em;
+  text-align: center;
+}
+
+.activity-list-item__description {
+  flex-grow: 1;
+}

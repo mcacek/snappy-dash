@@ -7,7 +7,10 @@
     <link rel="stylesheet" href="assets/css/snappy-dash.css">
   </head>
   <body>
-    <div id="layout-base">
+    <header id="l-main-header">
+      <h1 class="main-header__title">Snappy Dashboard</h1>
+    </header>
+    <div id="l-base">
       <div id="l-left-nav">
         <div id="l-left-nav-primary">
           <div class="nav-tile">
@@ -16,7 +19,7 @@
               <h2 class="nav-tile__label">Dashboard</h2>
             </a>
           </div>
-          <div class="nav-tile">
+          <div class="nav-tile  nav-tile__active">
             <a href="#">
               <div class="nav-tile__icon">A</div>
               <h2 class="nav-tile__label">Applications</h2>
@@ -45,7 +48,7 @@
         </div>
 
         <div id="l-left-nav-secondary">
-          <h2  class="filter-panel__title">Filter Stuff</h2>
+          <h2  class="filter-panel__title">Filter Applications</h2>
 
           <div class="filter-panel__group">
             <form>
@@ -86,23 +89,37 @@
             </form>
           </div>
         </div>
+      </div>
 
-        <div id="l-main">
-          <header id="l-main-header">
-            <h1 class="main-header__title">Snappy Dash</h1>
-          </header>
+      <div id="l-main">
+        <div class="main-content">
+          <div class="graph-panel">
 
-          <div class="main-content">
-            <div class="graph-panel">
-
+          </div>
+          <div class="activity-list">
+            <div class="activity-list-item">
+              <div class="activity-list-item__icon">A</div>
+              <div class="activity-list-item__description">
+                Some application was deployed
+              </div>
             </div>
-            <div class="recent-activity">
-              <p>Item #1</p>
-              <p>Item #1</p>
-              <p>Item #1</p>
-              <p>Item #1</p>
-              <p>Item #1</p>
-              <p>Item #1</p>
+            <div class="activity-list-item">
+              <div class="activity-list-item__icon">R</div>
+              <div class="activity-list-item__description">
+                Some application was deployed
+              </div>
+            </div>
+            <div class="activity-list-item">
+              <div class="activity-list-item__icon">A</div>
+              <div class="activity-list-item__description">
+                Some application was deployed
+              </div>
+            </div>
+            <div class="activity-list-item">
+              <div class="activity-list-item__icon">A</div>
+              <div class="activity-list-item__description">
+                Some application was deployed
+              </div>
             </div>
           </div>
         </div>
