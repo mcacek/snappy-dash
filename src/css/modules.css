@@ -1,0 +1,6 @@
+@import 'colors.css';
+
+/* Main header content */
+.main-header__title {
+  margin-top: 16px;
+}

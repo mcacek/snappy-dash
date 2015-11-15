@@ -3,39 +3,110 @@
   <head>
     <meta charset="utf-8">
     <title>Snappy Dash</title>
+    <link rel="stylesheet" href="assets/css/vendor.css">
     <link rel="stylesheet" href="assets/css/snappy-dash.css">
   </head>
   <body>
-    <div class="left-nav">
-      <div class="user-nav">
-        <img src="user-nav__avatar" alt="User Avatar" />
-        <h2 class="user-nav__name">Charlie Kelly</h2>
-        <ul class="user-nav__controls">
-          <li class="user-nav__control-item"><a href="#">Profile</a></li>
-          <li class="user-nav__control-item">Logout</a></li>
-        </ul>
+    <div id="layout-base">
+      <div id="l-left-nav">
+        <div id="l-left-nav-primary">
+          <div class="nav-tile">
+            <a href="#">
+              <div class="nav-tile__icon">Da</div>
+              <h2 class="nav-tile__label">Dashboard</h2>
+            </a>
+          </div>
+          <div class="nav-tile">
+            <a href="#">
+              <div class="nav-tile__icon">A</div>
+              <h2 class="nav-tile__label">Applications</h2>
+            </a>
+          </div>
+          <div class="nav-tile">
+            <div class="nav-tile__counter">20</div>
+            <a href="#">
+              <div class="nav-tile__icon">R</div>
+              <h2 class="nav-tile__label">Releases</h2>
+            </a>
+          </div>
+          <div class="nav-tile">
+            <div class="nav-tile__counter">3</div>
+            <a href="#">
+              <div class="nav-tile__icon">De</div>
+              <h2 class="nav-tile__label">Deployments</h2>
+            </a>
+          </div>
+          <div class="nav-tile">
+            <a href="#">
+              <div class="nav-tile__icon">Q</div>
+              <h2 class="nav-tile__label">Questions?</h2>
+            </a>
+          </div>
+        </div>
+
+        <div id="l-left-nav-secondary">
+          <h2  class="filter-panel__title">Filter Stuff</h2>
+
+          <div class="filter-panel__group">
+            <form>
+              <fieldset>
+                <legend>Sort</legend>
+                <div class="filter-panel-field">
+                  <input type="radio"  name="sort" id="sort1" checked="checked">
+                  <label for="sort1">Date Created</label>
+                </div>
+
+                <div class="filter-panel-field">
+                  <input type="radio"  name="sort" id="sort2">
+                  <label for="sort2">Name</label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <div class="filter-panel__group">
+            <form>
+              <fieldset>
+                <legend>Status</legend>
+                <div class="filter-panel-field">
+                  <input type="checkbox" id="status1">
+                  <label for="status1">Active</label>
+                </div>
+
+                <div class="filter-panel-field">
+                  <input type="checkbox" id="status2">
+                  <label for="status2">Failed</label>
+                </div>
+
+                <div class="filter-panel-field">
+                  <input type="checkbox" id="status3">
+                  <label for="status3">Complete</label>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </div>
+
+        <div id="l-main">
+          <header id="l-main-header">
+            <h1 class="main-header__title">Snappy Dash</h1>
+          </header>
+
+          <div class="main-content">
+            <div class="graph-panel">
+
+            </div>
+            <div class="recent-activity">
+              <p>Item #1</p>
+              <p>Item #1</p>
+              <p>Item #1</p>
+              <p>Item #1</p>
+              <p>Item #1</p>
+              <p>Item #1</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <ul class="left-nav-menu">
-        <li>Dashboard</li>
-        <li>Applications</li>
-        <li>Releases</li>
-        <li>Deployments</li>
-        <li>Questions?</li>
-      </ul>
-
-      <ul class="left-nav-submenu">
-        <li>Search:</li>
-        <li>Sort:</li>
-        <li>Filter:</li>
-      </ul>
-    </div>
-
-    <header class="main-header">
-      <h1 class="main-header__title">Snappy Dash</h1>
-    </header>
-
-    <div class="main-content">
-      <p>Some content here..</p>
     </div>
 
     <script src="assets/js/vendor.js"></script>

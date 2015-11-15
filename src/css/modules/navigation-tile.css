@@ -1,0 +1,42 @@
+.nav-tile {
+  height: 100px;
+  text-align: center;
+  color: #eee;
+
+  > a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  > a:hover * {
+    background-color: var(--color-green-3);
+    color: #fff;
+  }
+}
+
+.nav-tile {
+  position: relative;
+}
+
+.nav-tile__icon {
+  font-size: 4em;
+}
+
+.nav-tile__label {
+  margin-top: 0;
+  padding-bottom: 1em;
+  font-size: .8em;
+  font-weight: 500;
+}
+
+.nav-tile__counter {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 1em;
+  height: 1em;
+  padding: .3em;
+  border-radius: 1em;
+  background-color: var(--color-blue-4);
+  opacity: .7;
+}

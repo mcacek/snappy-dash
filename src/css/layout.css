@@ -1,13 +1,35 @@
 @import 'colors.css';
 
-#left-nav {
-  background-color: var(--color-green-1);
+#l-base {
 
-  a {
-    color: #fff;
-  }
 }
 
-#main-header {
+/* Navigation */
+#l-left-nav {
+  display: flex;
+  flex-direction:row;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+#l-left-nav-primary {
+  width: 100px;
+  margin: 0;
+  background-color: var(--color-green-1);
+}
+
+#l-left-nav-secondary {
+  width: calc(300px - 2em);
+  margin: 0;
+  background-color: var(--color-green-2);
+}
+
+#l-main {
+  flex-grow: 1;
+  padding-left: 1em;
+}
+
+#l-main-header {
 
 }

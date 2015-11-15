@@ -1,0 +1,44 @@
+@import 'colors.css';
+
+/* Filter Panel */
+.filter-panel__title {
+  margin-top: 0;
+  font-size: 1.2em;
+  margin-top: 16px;
+  margin-left: 16px;
+}
+
+.filter-panel__group {
+  padding: 2em;
+  border-bottom: 1px solid var(--color-green-3);
+
+  legend {
+    padding-left: 1em;
+    font-weight: 500;
+  }
+}
+
+.filter-panel-field {
+  margin: .5em 0;
+}
+
+input[type=radio], input[type=checkbox] {
+  display: none;
+
+  + label {
+    padding: .5em 1em;
+    display: block;
+    cursor: pointer;
+  }
+
+  &:checked + label {
+    background-color: var(--color-green-3);
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 500;
+  }
+  color: blue;
+  + label {
+
+  }
+}

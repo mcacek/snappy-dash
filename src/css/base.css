@@ -1,5 +1,18 @@
 @import 'colors.css';
 
 body {
-  color: var(--color-green-1);
+  background-color: var(--color-blue-2);
+  color: var(--color-blue-4);
+  font-weight: 300;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Raleway, 'Helvetica Neue';
+  font-weight: 300;
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
 }
