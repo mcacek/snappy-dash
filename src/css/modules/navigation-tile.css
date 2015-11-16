@@ -10,11 +10,14 @@
     border-left: 8px solid var(--color-green-1);
     text-decoration: none;
     color: inherit;
+    background-color: var(--color-green-1);
+    transition: background-color 300ms, border-color 300ms;
   }
 
   > a:hover {
     background-color: var(--color-green-3);
     border-color: var(--color-green-3);
+    transition: background-color 300ms, border-color 300ms;
     color: #fff;
   }
 
