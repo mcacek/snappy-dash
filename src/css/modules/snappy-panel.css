@@ -1,0 +1,14 @@
+.snappy-panel {
+  margin-bottom: .5em;
+}
+
+.snappy-panel__header {
+  padding: .5em;
+  padding-left: 1em;
+  background-color: var(--color-blue-4);
+  color: var(--color-blue-1);
+
+  > h2 {
+    margin: 0;
+  }
+}

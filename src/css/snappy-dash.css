@@ -1,6 +1,7 @@
 @import 'base.css';
 @import 'layout.css';
 @import 'modules.css';
+@import 'modules/snappy-panel.css';
 @import 'modules/filter-panel.css';
 @import 'modules/navigation-tile.css';
 @import 'modules/activity-list.css';

@@ -30,6 +30,7 @@
   height: calc(100% - 71px);
   flex-grow: 1;
   margin-left: 1px;
+  padding: .5em;
 }
 
 #l-main-header {

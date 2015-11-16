@@ -4,3 +4,8 @@
 .main-header__title {
   margin-top: 16px;
 }
+
+/* Main Content */
+.main-content {
+  width: 900px;
+}
