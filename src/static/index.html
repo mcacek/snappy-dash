@@ -15,35 +15,35 @@
       <div id="l-left-nav">
         <div id="l-left-nav-primary">
           <div class="nav-tile">
-            <a href="#">
+            <a v-link="{ path: '/dashboard' }">
               <div class="nav-tile__icon typcn typcn-home"></div>
               <h2 class="nav-tile__label">Dashboard</h2>
             </a>
           </div>
-          <div class="nav-tile  nav-tile__active">
-            <a href="#">
+          <div class="nav-tile">
+            <a v-link="{ path: '/applications' }">
               <div class="nav-tile__icon typcn typcn-th-small"></div>
               <h2 class="nav-tile__label">Applications</h2>
             </a>
           </div>
           <div class="nav-tile">
             <div class="nav-tile__counter">20</div>
-            <a href="#">
+            <a v-link="{ path: '/releases' }">
               <div class="nav-tile__icon typcn typcn-flow-switch"></div>
               <h2 class="nav-tile__label">Releases</h2>
             </a>
           </div>
           <div class="nav-tile">
             <div class="nav-tile__counter">3</div>
-            <a href="#">
+            <a v-link="{ path: '/deployments' }">
               <div class="nav-tile__icon typcn typcn-export"></div>
               <h2 class="nav-tile__label">Deployments</h2>
             </a>
           </div>
           <div class="nav-tile">
-            <a href="#">
+            <a v-link="{ path: '/support' }">
               <div class="nav-tile__icon typcn typcn-support"></div>
-              <h2 class="nav-tile__label">Questions?</h2>
+              <h2 class="nav-tile__label">Support</h2>
             </a>
           </div>
         </div>
@@ -94,50 +94,7 @@
 
       <div id="l-main">
         <div class="main-content">
-          <div class="snappy-panel">
-            <div class="snappy-panel__header">
-              <h2>Status Summary</h2>
-            </div>
-            <div class="snappy-panel__content">
-              <div class="snappy-placeholder">
-                <img src="http://placehold.it/300?text=graph1" alt="graph1" /><img src="http://placehold.it/300?text=graph2" alt="graph2" /><img src="http://placehold.it/300?text=graph3" alt="graph3" />
-              </div>
-            </div>
-          </div>
-
-          <div class="snappy-panel">
-            <div class="snappy-panel__header">
-              <h2>Recent Activity</h2>
-            </div>
-            <div class="snappy-panel__content">
-              <div class="activity-list">
-                <div class="activity-list-item">
-                  <div class="activity-list-item__icon">A</div>
-                  <div class="activity-list-item__description">
-                    Some application was deployed
-                  </div>
-                </div>
-                <div class="activity-list-item">
-                  <div class="activity-list-item__icon">R</div>
-                  <div class="activity-list-item__description">
-                    Some application was deployed
-                  </div>
-                </div>
-                <div class="activity-list-item">
-                  <div class="activity-list-item__icon">A</div>
-                  <div class="activity-list-item__description">
-                    Some application was deployed
-                  </div>
-                </div>
-                <div class="activity-list-item">
-                  <div class="activity-list-item__icon">A</div>
-                  <div class="activity-list-item__description">
-                    Some application was deployed
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <router-view></router-view>
         </div>
       </div>
     </div>

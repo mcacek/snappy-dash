@@ -12,7 +12,8 @@ module.exports = function(common) {
         files: {
           src: [
             'node_modules/lodash/index.js',
-            'node_modules/angular/angular.js'
+            'node_modules/vue/dist/vue.js',
+            'node_modules/vue-router/dist/vue-router.js'
           ],
           destDir: common.buildDir + '/assets/js',
           destFile: 'vendor.js'

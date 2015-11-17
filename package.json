@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/mcacek/snappy-dash#readme",
   "devDependencies": {
-    "angular": "1.4.7",
     "autoprefixer": "6.1.0",
     "brfs": "1.4.1",
     "browser-sync": "2.9.12",
@@ -42,6 +41,8 @@
     "stylelint": "2.1.0",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",
+    "vue": "^1.0.8",
+    "vue-router": "^0.7.6",
     "watchify": "3.6.0"
   },
   "browserify": {
@@ -51,7 +52,8 @@
     ]
   },
   "browserify-shim": {
-    "angular": "global:angular",
+    "vue": "global:Vue",
+    "vue-router": "global:VueRouter",
     "lodash": "global:_"
   }
 }

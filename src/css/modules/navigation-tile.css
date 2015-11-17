@@ -21,9 +21,10 @@
     color: #fff;
   }
 
-  &.nav-tile__active > a {
+  a.v-link-active {
     background-color: var(--color-green-3);
     border-color: var(--color-green-4);
+    color: #fff;
   }
 }
 
