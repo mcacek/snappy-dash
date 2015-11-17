@@ -2,6 +2,7 @@
   "rules": {
     "color-hex-case": [2, "lower"],
     "custom-property-no-outside-root": 2,
-    "declaration-colon-space-after": [2, "always"]
+    "declaration-colon-space-after": [2, "always"],
+    "value-no-vendor-prefix": 2
   }
 }
