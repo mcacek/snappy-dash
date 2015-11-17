@@ -9,11 +9,6 @@ var Support = require('./components/support');
 
 Vue.directive('filter-panel', require('./components/filter-panel'));
 
-Vue.directive('demo', function (value) {
-  console.log(value.color) // "white"
-  console.log(value.text) // "hello!"
-});
-
 Vue.config.debug = true;
 Vue.use(VueRouter);
 
@@ -22,24 +17,29 @@ var router = new VueRouter();
 
 router.map({
     '/dashboard': {
-        component: Dashboard
+      name: 'dashboard',
+      component: Dashboard
     },
     '/applications': {
-        component: Applications
+      name: 'applications',
+      component: Applications
     },
     '/deployments': {
-        component: Deployments
+      name: 'deployments',
+      component: Deployments
     },
     '/releases': {
-        component: Releases
+      name: 'releases',
+      component: Releases
     },
     '/support': {
-        component: Support
+      name: 'support',
+      component: Support
     },
 });
 
 router.alias({
-  '/': '/dashboard'
+  '/': 'dashboard'
 });
 
 router.start(App, 'body');
