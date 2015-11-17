@@ -7,6 +7,13 @@ var Deployments = require('./components/deployments');
 var Releases = require('./components/releases');
 var Support = require('./components/support');
 
+Vue.directive('filter-panel', require('./components/filter-panel'));
+
+Vue.directive('demo', function (value) {
+  console.log(value.color) // "white"
+  console.log(value.text) // "hello!"
+});
+
 Vue.config.debug = true;
 Vue.use(VueRouter);
 
@@ -35,4 +42,4 @@ router.alias({
   '/': '/dashboard'
 });
 
-router.start(App, '#l-base');
+router.start(App, 'body');

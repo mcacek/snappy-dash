@@ -3,6 +3,10 @@
     "browser": true,
     "node": true
   },
+  "globals": {
+    "describe": true,
+    "it": true
+  },
   "rules": {
     "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
     "eol-last": 2,
