@@ -18,6 +18,8 @@
   "homepage": "https://github.com/mcacek/snappy-dash#readme",
   "devDependencies": {
     "autoprefixer": "6.1.0",
+    "babel-preset-es2015": "6.1.18",
+    "babelify": "7.2.0",
     "brfs": "1.4.1",
     "browser-sync": "2.9.12",
     "browserify": "12.0.1",
@@ -41,14 +43,15 @@
     "stylelint": "2.1.0",
     "vinyl-buffer": "1.0.0",
     "vinyl-source-stream": "1.1.0",
-    "vue": "^1.0.8",
-    "vue-router": "^0.7.6",
+    "vue": "1.0.8",
+    "vue-router": "0.7.6",
     "watchify": "3.6.0"
   },
   "browserify": {
     "transform": [
       "brfs",
-      "browserify-shim"
+      "browserify-shim",
+      "babelify"
     ]
   },
   "browserify-shim": {
