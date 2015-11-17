@@ -1,19 +1,19 @@
-var Vue = require('vue');
-var VueRouter = require('vue-router');
+const Vue = require('vue');
+const VueRouter = require('vue-router');
 
-var Dashboard = require('./components/dashboard');
-var Applications = require('./components/applications');
-var Deployments = require('./components/deployments');
-var Releases = require('./components/releases');
-var Support = require('./components/support');
+const Dashboard = require('./components/dashboard');
+const Applications = require('./components/applications');
+const Deployments = require('./components/deployments');
+const Releases = require('./components/releases');
+const Support = require('./components/support');
 
 Vue.directive('filter-panel', require('./components/filter-panel'));
 
 Vue.config.debug = true;
 Vue.use(VueRouter);
 
-var App = Vue.extend({});
-var router = new VueRouter();
+const App = Vue.extend({});
+const router = new VueRouter();
 
 router.map({
     '/dashboard': {
