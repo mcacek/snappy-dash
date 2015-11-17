@@ -1,6 +1,7 @@
 {
   "rules": {
     "color-hex-case": [2, "lower"],
-    "custom-property-no-outside-root": 2
+    "custom-property-no-outside-root": 2,
+    "declaration-colon-space-after": [2, "always"]
   }
 }
