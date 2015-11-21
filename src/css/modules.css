@@ -1,11 +1,40 @@
 @import 'colors.css';
 
 /* Main header content */
+
 .main-header__title {
   margin-top: 16px;
 }
 
 /* Main Content */
+
 .main-content {
   width: 900px;
+}
+
+/* Application List */
+
+.application-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.application-tile {
+  width: 16.666666667%;
+  text-align: center;
+  background-color: var(--color-blue-3);
+
+  > a {
+    display: block;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 300ms, border-color 300ms;
+
+    &:hover {
+      background-color: var(--color-blue-4);
+      transition: background-color 300ms, border-color 300ms;
+    }
+  }
 }
