@@ -4,6 +4,9 @@
     "custom-property-no-outside-root": 2,
     "declaration-colon-space-after": [2, "always"],
     "value-no-vendor-prefix": 2,
-    "string-quotes": [2, "single"]
+    "string-quotes": [2, "single"],
+    "selector-list-comma-newline-after": 0,
+    "comment-empty-line-before": 0,
+    "rule-non-nested-empty-line-before": 0
   }
 }

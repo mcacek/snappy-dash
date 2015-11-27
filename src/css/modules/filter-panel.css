@@ -2,33 +2,34 @@
 
 /* Filter Panel */
 .filter-panel__title {
-  margin-top: 0;
   font-size: 1.2em;
-  margin-top: 16px;
   margin-left: 16px;
+  margin-top: 0;
+  margin-top: 16px;
 }
 
 .filter-panel__group {
-  padding: .5em;
   border-bottom: 1px solid var(--color-green-3);
+  padding: 0.5em;
 
   legend {
-    padding-left: .5em;
     font-weight: 500;
+    padding-left: 0.5em;
   }
 }
 
 .filter-panel-field {
-  margin: .5em 0;
+  margin: 0.5em 0;
 }
 
 input[type=radio], input[type=checkbox] {
+  color: blue;
   display: none;
 
   + label {
-    padding: .5em 1em;
-    display: block;
     cursor: pointer;
+    display: block;
+    padding: 0.5em 1em;
   }
 
   &:checked + label {
@@ -36,9 +37,5 @@ input[type=radio], input[type=checkbox] {
     border-radius: 10px;
     color: #fff;
     font-weight: 500;
-  }
-  color: blue;
-  + label {
-
   }
 }

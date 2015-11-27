@@ -2,11 +2,11 @@
 
 #l-base {
   display: flex;
-  position: absolute;
-  height: calc(100% - 71px);
-  width: 100%;
-  flex-grow: 1;
   flex-direction: row;
+  flex-grow: 1;
+  height: calc(100% - 71px);
+  position: absolute;
+  width: 100%;
 }
 
 /* Navigation */
@@ -16,27 +16,27 @@
 }
 
 #l-left-nav-primary {
-  margin: 0;
   background-color: var(--color-green-1);
+  margin: 0;
 }
 
 #l-left-nav-secondary {
-  width: calc(300px - 2em);
-  margin: 0;
   background-color: var(--color-green-2);
+  margin: 0;
+  width: calc(300px - 2em);
 }
 
 #l-main {
-  height: calc(100% - 71px);
   flex-grow: 1;
+  height: calc(100% - 71px);
   margin-left: 1px;
-  padding: .5em;
+  padding: 0.5em;
 }
 
 #l-main-header {
-  padding: 1em;
   background-color: var(--color-blue-4);
   color: var(--color-blue-1);
+  padding: 1em;
 
   > h1 {
     margin: 0;

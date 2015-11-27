@@ -1,15 +1,15 @@
 :root {
+  /* http://paletton.com/#uid=13s0u0kllllaFw0g0qFqFg0w0aF */
+  --color-blue-1: #6e91a1;
+  --color-blue-2: #477286;
+  --color-blue-3: #27556c;
+  --color-blue-4: #113c51;
+  --color-blue-5: #032536;
+
   /* http://paletton.com/#uid=12Z0u0kllllaFw0g0qFqFg0w0aF */
   --color-green-1: #79b694;
   --color-green-2: #4c986d;
   --color-green-3: #28794c;
   --color-green-4: #0f5b30;
   --color-green-5: #003d1a;
-
-  /* http://paletton.com/#uid=13s0u0kllllaFw0g0qFqFg0w0aF */
-  --color-blue-1: #6e91a1;
-  --color-blue-2:#477286;
-  --color-blue-3:#27556c;
-  --color-blue-4:#113c51;
-  --color-blue-5:#032536;
 }

@@ -1,6 +1,6 @@
 .nav-tile {
-  text-align: center;
   color: #eee;
+  text-align: center;
 
   > a {
     background-color: var(--color-green-1);
@@ -18,8 +18,8 @@
   > a:hover {
     background-color: var(--color-green-3);
     border-color: var(--color-green-3);
-    transition: background-color 300ms, border-color 300ms;
     color: #fff;
+    transition: background-color 300ms, border-color 300ms;
   }
 
   a.v-link-active {
@@ -38,20 +38,20 @@
 }
 
 .nav-tile__label {
+  font-size: 0.8em;
+  font-weight: 500;
   margin-top: 0;
   padding-bottom: 1em;
-  font-size: .8em;
-  font-weight: 500;
 }
 
 .nav-tile__counter {
-  position: absolute;
-  top: 10%;
-  right: 10%;
-  width: 1em;
-  height: 1em;
-  padding: .3em;
-  border-radius: 1em;
   background-color: var(--color-blue-4);
-  opacity: .7;
+  border-radius: 50%;
+  height: 1em;
+  opacity: 0.7;
+  padding: 0.3em;
+  position: absolute;
+  right: 10%;
+  top: 10%;
+  width: 1em;
 }

@@ -1,12 +1,12 @@
 .snappy-panel {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
 }
 
 .snappy-panel__header {
-  padding: .5em;
-  padding-left: 1em;
   background-color: var(--color-blue-4);
   color: var(--color-blue-1);
+  padding: 0.5em;
+  padding-left: 1em;
 
   > h2 {
     margin: 0;
