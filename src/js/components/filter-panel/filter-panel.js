@@ -1,4 +1,5 @@
 const fs = require('fs');
+const path = require('path');
 
 module.exports = {
   bind: function () {
@@ -9,7 +10,7 @@ module.exports = {
   },
   update: function () {
     console.log('upate');
-    this.el.innerHTML = fs.readFileSync(__dirname + '/filter-panel.html', 'utf8');
+    this.el.innerHTML = fs.readFileSync(path.join(__dirname, '/filter-panel.html'), 'utf8');
   },
   unbind: function () {
     console.log('unbind');

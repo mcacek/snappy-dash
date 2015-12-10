@@ -1,3 +1,3 @@
-describe('filter-panel', function() {
+describe('filter-panel', function () {
 
 });

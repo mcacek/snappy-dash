@@ -16,26 +16,26 @@ const App = Vue.extend({});
 const router = new VueRouter();
 
 router.map({
-    '/dashboard': {
-      name: 'dashboard',
-      component: Dashboard
-    },
-    '/applications': {
-      name: 'applications',
-      component: Applications
-    },
-    '/deployments': {
-      name: 'deployments',
-      component: Deployments
-    },
-    '/releases': {
-      name: 'releases',
-      component: Releases
-    },
-    '/support': {
-      name: 'support',
-      component: Support
-    },
+  '/dashboard': {
+    name: 'dashboard',
+    component: Dashboard
+  },
+  '/applications': {
+    name: 'applications',
+    component: Applications
+  },
+  '/deployments': {
+    name: 'deployments',
+    component: Deployments
+  },
+  '/releases': {
+    name: 'releases',
+    component: Releases
+  },
+  '/support': {
+    name: 'support',
+    component: Support
+  }
 });
 
 router.alias({
